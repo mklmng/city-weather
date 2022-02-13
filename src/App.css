@@ -1,38 +1,93 @@
-.App {
+.container{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.05);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.container-item{
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 1rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-buttons{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-fullwidth{
+  flex-basis: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper-card h2{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.wrapper-card .temp{
+  display: inline;
+}
+
+.weather-icon .temp{
+  display: inline;
+  float: left;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-button{
+  display: inline-block;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #eac385 0%,#efa332 50%,#f79707 69%);
+}
+.main-button:hover{
+  background: linear-gradient(to bottom, #b7deed 0%,#71ceef 50%,#21b4e2 75%,#21b4e2 98%,#b7deed 100%);
+}
+
+.wrapper{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper-card{
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #CCC;
+  background-color: #D3D0CE;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 48rem) {
+  .container-item{
+    width: 50%;
+    text-align: left;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 64rem) {
+  .container-item{
+    width: 40%;
+  }
+  .container-buttons{
+    width: 20%;
+    display: inline-block;
   }
 }

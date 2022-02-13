@@ -1,0 +1,20 @@
+label{
+  font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
+  font-size: 1.25rem;
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+#city{
+  padding: 0.5rem;
+  border-radius: 2px;
+  width: 75%;
+  max-width: 330px;
+  font-size: 0.875rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, .1);
+  box-shadow: 0px 5px 5px 0px #BCB8BC;
+}

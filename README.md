@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# City weather
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app allows the users to see the weather in their locations using the OpenWeatherMap API. 
+
+# Tech Stack
+
+ * React
+ * OpenWeatherMap API
+ * country-codes-list
+
+# Functionalities
+
+ * Get the weather of a exact location using the city and the country to avoid duplicated cities.
 
 ## Available Scripts
 
