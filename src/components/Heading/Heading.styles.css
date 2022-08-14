@@ -1,0 +1,36 @@
+#main-header{
+  padding-bottom: 0.5rem;
+  margin: 0;
+  position: relative;
+}
+
+#main-header::before, #main-header::after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+#main-header::before{
+  left: 0;
+  background: linear-gradient(to right, transparent 0%,#FFF 20%,transparent 100%);
+}
+
+#main-header::after{
+  right: 0;
+  background: linear-gradient(to left, transparent 0%,#FFF 20%,transparent 100%);
+}
+
+h1{
+  font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
+  color: rgba(255,215,0.95); 
+  text-align: center;
+  line-height: 1.29;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}

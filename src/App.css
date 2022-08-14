@@ -1,0 +1,130 @@
+.container{
+  padding: 1rem;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.05);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.container-item{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container-item + .container-item{
+  margin-bottom: 2rem;
+}
+
+.container-buttons{
+  width: 100%;
+}
+
+.item-fullwidth{
+  flex-basis: 100%;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-label{
+  margin: 0;
+}
+
+label{
+  font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
+  font-size: 1.25rem;
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+.wrapper-card{
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #CCC;
+  background-color: #D3D0CE;
+}
+
+.button-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-button{
+  width: 200px;
+  display: block;
+  background: -moz-linear-gradient(top, #faa51a, #f47a20);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: black;
+  flex-basis: 100%;
+}
+
+.main-button:hover{
+  background: -moz-linear-gradient(top, #F00, #f47a20);
+  color: #FFF;
+  transition: all .3s;
+}
+
+@media (min-width: 48rem) {
+  .container-item{
+    width: 50%;
+    text-align: center;
+  }
+
+  .button-group{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-button{
+    margin: 0;
+    flex-basis: auto;
+  }
+
+  .checkbox{
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .container-item{
+    width: 35%;
+    text-align: left;
+  }
+  .container-buttons{
+    width: 30%;
+    display: inline-block;
+  }
+
+  .button-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .main-button{
+    width: 150px;
+  }
+
+  .checkbox{
+    margin-left: 0;
+  }
+}
