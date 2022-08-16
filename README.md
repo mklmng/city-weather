@@ -2,6 +2,10 @@
 
 This app allows the users to see the weather in their locations using the OpenWeatherMap API.
 
+# Live site
+
+https://city-weather-v1.herokuapp.com/
+
 # Tech Stack
 
  * React
